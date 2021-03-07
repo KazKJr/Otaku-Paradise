@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "College-Block";
+    src: url("../College_Block_2.0_D.otf") format("opentype");
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper, #wrapper-section, #view-all {
+    text-align: center;
+}
+
+.banner {
+    display: none;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner img {
+    height: 238px;
+    width: 500px;
+}
+.banner-overlay {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-title {
+    color: white;
+}
+.banner a {
+    color: black;
+}
+.banner-title, .browse {
+    font-family: "College-Block";
+    font-size: 1.5em;
+    font-weight: normal;
+}
+.banner-title{
+    margin-bottom: 1em;
+}
+.browse {
+    background-color: white;
+    cursor: pointer;
+    padding: 0 0.5em;
+}
+.price {
+    font-weight: bold;
+}
+
+#black-cover {
+    position: absolute;
+    top: 0.001em;
+    height: 238px;
+    width: 500px;
+    background-color: black;
+    opacity: 0.3;
+}
+#wrapper-section {
+    margin: 1em auto;
+}
+#wrapper-section section {
+    width: 45%;
+    margin: 0 auto;
+    display: inline-block;
+}
+#wrapper-section section:nth-child(2) {
+    position: relative;
+    top: -1em;
+    z-index: 1;
+}
+
+section img {
+    margin-top: 2em;
+}
+section p {
+    margin-bottom: 0.5em;
+}
+
+main h3, #view-all {
+    color: white;
+    padding: 0.5em;
+}
+
+main h3 {
+    background-color: #DB5657;
+}
+
+#view-all {
+    display: block;
+    width: 5em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background-color: black;
+}
+
+@media only screen and (min-width: 480px) {
+    #wrapper-section section:nth-child(2) {
+        top: 0em;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    .banner img, #black-cover {
+        height: 333px;
+        width: 700px;
+    }
+
+    #wrapper-section section:nth-child(2) {
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .banner-overlay {
+        top: 35%;
+    }
+    .banner img, #black-cover {
+        height: 475px;
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .banner-overlay {
+        top: 40%;
+    }
+    .banner img, #black-cover {
+        height: 713px;
+        width: 1500px;
+    }
+
+    main h3, section p, #view-all p {
+        font-size: 1.2em;
+    }
+}

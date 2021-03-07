@@ -1,0 +1,23 @@
+#mail {
+    text-align: center;
+    text-indent: -99999em;
+    background: url(../Images/mail-m.png) no-repeat center;
+    height: 3em;
+}
+
+.member, #message {
+    border: 0.001em solid black;
+    border-radius: 0.2em; 
+    margin: 0 0.5em 0.5em;
+    padding: 0.5em;
+}
+
+#message {
+    padding-bottom: 5em;
+}
+
+#send {
+    text-align: right;
+    margin: 0.5em 0.2em;
+    cursor: pointer;
+}

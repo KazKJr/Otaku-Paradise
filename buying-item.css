@@ -1,0 +1,142 @@
+img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.7em;
+    color: black;
+}
+
+#add-to-cart, #size-selection {
+    width: 10em;
+    margin: 0 auto;
+    padding: 0.5em;
+}
+#reviews, #write-review, #size-selection {
+    text-align: left;
+}
+#size-selection span, #quantity span, #add-to-cart, .dots {
+    cursor: pointer;
+}
+#size-selection, #write-review{
+    border: 0.1em solid black;
+}
+#add-to-cart, #write-review, #helpful-button {
+    border-radius: 1em;
+}
+#quantity span, #ratings, #write-review, #helpful-number, #helpful-button {
+    color: grey;
+}
+#person-review, #helpful-number, #helpful-button {
+    margin-left: 10%;
+    text-align: left;
+}
+#item-name, #size, #quantity, #price, #ratings {
+    width: 15em;
+    margin: 0 auto;
+}
+
+#item-name {
+    font-size: 0.9em;
+}
+#size-selection span {
+    margin-left: 8em;
+}
+#quantity span {
+    padding: 0 1em;
+    font-size: 0.6em;
+}
+#add-to-cart {
+    background-color: grey;
+}
+#ratings {
+    font-size: 1.5em;
+}
+#ratings span {
+    color: black;
+    font-size: 0.5em;
+    padding-top: 0.5em;
+    background: url(../Images/stars-s.png) no-repeat top;
+}
+#reviews {
+    text-decoration: underline;
+    border-bottom: 0.1em solid grey;
+    padding-left: 10%;
+}
+#write-review {
+    padding: 1em 1em;
+    margin: 0 10%;
+}
+#wrapper-2 {
+    width: 4em;
+    margin: 0 auto;
+}
+#review-picture {
+    text-indent: -99999em;
+    height: 3em;
+    width: 3em;
+    background-color: rgb(92, 88, 88);
+    border-radius: 5em;
+    display: inline-block;
+    margin-left: 10%;
+}
+#review-rating {
+    display: inline-block;
+    height: 2.5em;
+    width: 10em;
+    text-align: left;
+    font-size: 0.75em;
+    background: url(../Images/stars-l.png) no-repeat bottom left;
+}
+#person-review {
+    margin: 0 10%;
+    line-height: 2em;
+}
+#helpful-number {
+    font-size: 0.5em;
+}
+#helpful-button {
+    padding: 1em;
+    border: 0.1em solid grey;
+    width: 4em;
+}
+
+p, img, #ratings, #write-review, #person-review, #add-to-cart, #size-selection, #wrapper-2, #item-name, #size, #quantity, #price {
+    margin-bottom: 1em;
+}
+
+/*Compliments W3Schools*/
+.dot {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media only screen and (min-width: 780px) {
+    section {
+        width: 45%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    section:nth-child(2) {
+        position: absolute;
+        margin-top: 3em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+
+    #item-name {
+        font-size: 1.4em;
+    }
+
+    .dot {
+        visibility: hidden;
+    }
+}
